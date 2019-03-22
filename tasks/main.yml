@@ -8,6 +8,12 @@
     - docker
     - docker-client.x86_64
     - python-docker-py
+    - python-pip
+    - python-pip
+
+- name: Installation des pre-requis du module docker-compose
+  pip: 
+    name: docker-compose
 
 - name: Verifier que le daemon Docker-compose est bien installé
   shell: "{{ item }}"
